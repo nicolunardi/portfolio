@@ -24,7 +24,7 @@ export const home = {
 export const about = {
   title: "About Me",
   text: [
-    "I am a software engineer currently working as a medical scientist. Currently, I am completing a master of information technology as the University of New South Wales.",
+    "I am a software engineer currently working as a medical scientist. Currently, I am completing a master of information technology at the University of New South Wales.",
     "Throughout my many studies and career, the one constant has always been my strong desire to always be learning to better myself. This has allowed me to grow and become a well rounded individual. This desire has been the reason that I began coding as a hobby, which has developed into a career aspiration. I am ready to step into a new stage and begin my career in the tech field.",
     "As well as pushing to learn new things, I take pride in sharing my knowledge with others. In all my recent roles, I have been in charge of training new recruits into fully fledged contributing team members.",
     "I look forward to working as part of an inclusive team, with values that align with my own.",
