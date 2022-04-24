@@ -1,0 +1,16 @@
+/* rotate diagonally for dna svg */
+
+.rotate-d {
+  animation: rotate 4s linear infinite;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate3d(0, 0, 0, 180deg);
+  }
+  50% {
+    transform: rotate3d(1, -1, 0, 180deg);
+  }
+  100% {
+    transform: rotate3d(0, 0, 0, 180deg);
+  }
+}

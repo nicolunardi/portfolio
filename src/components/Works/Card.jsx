@@ -2,23 +2,39 @@ import React from "react";
 
 const Card = ({ project }) => {
   return (
-    <div className="sm:w-full rounded shadow-lg sm:flex sm:flex-col bg-slate-50 mb-16 sm:p-5 md:p-10 sm:pb-0 md:pb-0">
-      <div className="sm:flex">
+    <div className="sm:w-full rounded shadow-lg md:flex md:flex-col bg-slate-50 mb-16 sm:p-5 md:p-10 sm:pb-0 md:pb-0">
+      <div className="lg:flex gap-5">
         <img
-          className="block w-full sm:w-1/2"
+          className="block w-full lg:w-1/2 h-fit"
           src={project.image}
           alt="project"
         />
-        <div className="px-6 py-4 sm:pt-0">
+        <div className="px-6 py-4 lg:pt-0">
           <div className="font-bold text-xl mb-2">{project.title}</div>
-          <p className="text-gray-700 text-base">{project.info}</p>
+          {project.info.map((p, idx) => (
+            <p key={idx} className="text-gray-700 text-base mb-4">
+              {p}
+            </p>
+          ))}
           <div>
-            <a href="#" className="inline-block underline mt-2">
-              Read more
+            <a
+              href={project.code}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block underline mt-2"
+            >
+              Code
             </a>
-            <a href="#" className="inline-block underline mt-2 ml-5">
-              Live
-            </a>
+            {project.live && (
+              <a
+                href={project.live}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block underline mt-2 ml-5"
+              >
+                Live
+              </a>
+            )}
           </div>
         </div>
       </div>

@@ -45,7 +45,7 @@ const ContactForm = () => {
       </div>
       <button
         type="submit"
-        className="w-32 h-10 m-auto block mt-10 border rounded-full bg-orange-300 border-orange-300 hover:bg-inherit"
+        className="w-32 h-10 m-auto block mt-10 border rounded-full shadow-md bg-orange-300 border-orange-300 hover:bg-orange-100 hover:scale-105"
       >
         Send
       </button>

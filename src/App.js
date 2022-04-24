@@ -5,10 +5,11 @@ import Header from "./components/NavBar/NavBar";
 import SkillsContainer from "./components/Skills/SkillsContainer";
 import Socials from "./components/Socials/Socials";
 import WorksContainer from "./components/Works/WorksContainer";
+import "./App.css";
 
 function App() {
   return (
-    <div className="w-10/12 m-auto">
+    <div className="w-10/12 m-auto bg-white">
       <Header></Header>
       <HomeContainer></HomeContainer>
       <AboutContainer></AboutContainer>

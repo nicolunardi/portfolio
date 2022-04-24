@@ -5,3 +5,32 @@
 body {
   font-family: "Poppins", sans-serif;
 }
+
+#root {
+  background-color: white;
+}
+
+
+.fadein-first {
+  animation: fadeInAnimation ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.fadein-second {
+  opacity: 0;
+  animation: fadeInAnimation ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
