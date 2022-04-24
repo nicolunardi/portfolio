@@ -2,6 +2,7 @@ import React from "react";
 import SocialItemSmall from "./SocialItemSmall";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { AiOutlineMail, AiOutlineFilePdf } from "react-icons/ai";
+import resume from "../../assets/other/resume.pdf";
 
 const SocialsSmall = () => {
   return (
@@ -32,6 +33,7 @@ const SocialsSmall = () => {
         background="bg-orange-900"
         textColor="text-white"
         text="Resume"
+        link={resume}
       ></SocialItemSmall>
     </div>
   );

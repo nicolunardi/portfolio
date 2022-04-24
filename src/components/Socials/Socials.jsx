@@ -2,6 +2,7 @@ import React from "react";
 import SocialItem from "./SocialItem";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { AiOutlineMail, AiOutlineFilePdf } from "react-icons/ai";
+import resume from "../../assets/other/resume.pdf";
 
 const Socials = () => {
   return (
@@ -32,6 +33,7 @@ const Socials = () => {
         background="bg-orange-900"
         textColor="text-white"
         text="Resume"
+        link={resume}
       ></SocialItem>
     </div>
   );
