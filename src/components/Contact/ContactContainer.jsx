@@ -5,12 +5,12 @@ const ContactContainer = () => {
   return (
     <section
       name="contact"
-      className="min-h-screen  items-center border-b border-slate-400 max-w-[500px] m-auto"
+      className="min-h-screen border-b border-slate-400 max-w-[500px] m-auto"
     >
       <h1 className="text-center sm:text-left text-4xl py-10 underline decoration-orange-400 underline-offset-8">
         Contact
       </h1>
-      <div className="rounded shadow-lg bg-slate-50 p-10">
+      <div className="rounded shadow-lg bg-slate-50 p-10 mt-auto">
         <p className="text-center text-lg mb-3">Lets get in touch :)</p>
         <ContactForm></ContactForm>
       </div>
